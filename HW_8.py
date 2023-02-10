@@ -14,10 +14,10 @@ import numpy as np
 
 zp = np.array([35, 45, 190, 200, 40, 70, 54, 150, 120, 110])
 ks = np.array([401, 574, 874, 919, 459, 739, 653, 902, 746, 832])
-#plt.scatter(zp,ks)
-#plt.xlabel('Величина заработной платы')
-#plt.ylabel('Поведенческий кредитный скоринг', rotation=90)
-#plt.show()
+plt.scatter(zp,ks)
+plt.xlabel('Величина заработной платы')
+plt.ylabel('Поведенческий кредитный скоринг', rotation=90)
+plt.show()
 
 def covar(array1, array2):
     MXY = sum(array1*array2)/len(array1)
